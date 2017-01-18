@@ -4,5 +4,5 @@ Both have advantages and disadvantages.
 /Boilerplate text
 
 # The two methods:
-- manually installing the binaries
+- [manually installing the binaries](https://github.com/JMoVS/installing_video_transcoding_on_windows/blob/master/native_method.md)
 - [installing it in the linux subsystem for windows](https://github.com/JMoVS/installing_video_transcoding_on_windows/blob/master/lxss_method)
