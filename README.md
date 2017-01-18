@@ -131,4 +131,6 @@ sudo gem install video_transcoding
 
 If you have your movie files in the windows file system (so NOT in ~userfolder/AppData/Local/lxss/home...), for example on your desktop, you have to provide the path to it via `/mnt/[drive letter]/path/to/your/file/location`. It then should work.
 
-I hope this works. If it doesn't, feel free to contact me on twitter @JMoVS or ~~comment below~~. *Don't comment below, I won't get a notification for it. Please rely on Twitter or write me an email at video_transcoding [AT] justinscholz.de .*
+I hope this works. If it doesn't, feel free to contact me on twitter @JMoVS or comment below.
+
+This readme was originally a gist: https://gist.github.com/JMoVS/75f3c6b344648deef59bc761e5e5a0e6 - there are some good comments over there.
