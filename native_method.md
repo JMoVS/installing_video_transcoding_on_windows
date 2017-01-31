@@ -1,15 +1,15 @@
 ## Downloads
  - [HandBrakeCLI](https://handbrake.fr/downloads2.php)  
-   Get version 1.0.2
+   Get the latest stable version
  - [ffmpeg](https://ffmpeg.org/download.html), the actual download page for Windows is [here](http://ffmpeg.zeranoe.com/builds/)  
-   Get the 3.2.2 'static' release.
+   Get the latest stable 'static' release.
  - [mkvtoolnix](https://mkvtoolnix.download/downloads.html#windows), the actual download page is [here](https://www.fosshub.com/MKVToolNix.html)  
-   Download the 9.8 portable version. It's packaged as a .7z file, I'd recommend using [7zip](http://www.7-zip.org/download.html) to open these files
- - [MPlayer r37905](http://www.mplayerhq.hu/design7/news.html), the actual download page is [here](http://mplayerwin.sourceforge.net/downloads.html)  
-   I've had [problems](https://github.com/donmelton/video_transcoding/issues/105) with some version of MPlayer, so I'd recommend using exactly this version. The direct link to download it is [here](http://sourceforge.net/projects/mplayerwin/files/MPlayer-MEncoder/r37905/mplayer-svn-37905-x86_64.7z/download)
+   Download the latest portable version. It's packaged as a .7z file, I'd recommend using [7zip](http://www.7-zip.org/download.html) to open these files
+ - [MPlayer](http://www.mplayerhq.hu/design7/news.html), the actual download page is [here](http://mplayerwin.sourceforge.net/downloads.html)  
+   I've had [problems](https://github.com/donmelton/video_transcoding/issues/105) with some version of MPlayer, so I'd recommend using r37905. The direct link to download it is [here](http://sourceforge.net/projects/mplayerwin/files/MPlayer-MEncoder/r37905/mplayer-svn-37905-x86_64.7z/download)
  - [MP4v2](https://code.google.com/archive/p/mp4v2/)  
    Functional Windows binaries for this are hard to find, I've been using [this one](http://forum.doom9.org/showthread.php?t=171038). If anyone knows of a more official binary, please let me know
- - [RubyInstaller 2.2.6](https://rubyinstaller.org/downloads/)
+ - [RubyInstaller](https://rubyinstaller.org/downloads/)
 
 ## Steps
  1. Run the RubyInstaller to install Ruby and be sure to have "Add to path" ticked when you install.
