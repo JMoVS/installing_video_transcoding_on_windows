@@ -1,3 +1,5 @@
+# Installation
+
 ## Downloads
  - [HandBrakeCLI](https://handbrake.fr/downloads2.php)  
    Get the latest stable version
@@ -33,7 +35,7 @@
 
 Be sure to give the [README](https://github.com/donmelton/video_transcoding/blob/master/README.md) a thorough read, as it contains an enourmous amount of information about how to use the tools.
 
-## Adding a folder to your PATH in Windows 10
+### Adding a folder to your PATH in Windows 10
  - Right click start menu
  - Open Control Panel
  - Search "Path"
@@ -41,3 +43,40 @@ Be sure to give the [README](https://github.com/donmelton/video_transcoding/blob
  - Click "Environment variables" buttin in lower right of the new window
  - In the system variables box find path, click to select it
  - Click "Edit" button
+
+# Further information
+## Batch control
+Batch control can be achieved with the following .bat file:
+```
+@echo off
+
+setlocal EnableDelayedExpansion
+
+set work=%cd%
+set queue=%work%\queue.txt
+set crops=%work%\Crops
+
+for /F "tokens=*" %%I in (queue.txt) do (
+    set title_name=%%~nI
+    set crop_file=%crops%\!title_name!.txt
+
+    if exist !crop_file! (
+        for /F "tokens=* USEBACKQ" %%F in (`type "!crop_file!"`) do set crop_option=--crop %%F
+    ) else (
+        set crop_option=
+    )
+
+    call transcode-video !crop_option! "%%I"
+)
+```
+
+It works in much the same way that Don's [bash script](https://github.com/donmelton/video_transcoding#batch-control-for-transcode-video) works, although it does have the limitation of not being able to "resume" the queue in the way that Don's does. I would recommend creating a `batch-transcode.bat` file in your `C:\bin` folder, then you can create the necesarry file structure anywhere:
+```
+Crops\
+queue.txt
+```
+
+In CMD you can `CD` to that directory, populate the `queue.txt` file then simply call `batch-transcode` and it'll transcode everything in the queue
+
+To create a `queue.txt` with every mkv file in a directory you can use the following command:  
+`for %a in (*.mkv) do echo %~fa >> queue.txt`
