@@ -16,13 +16,14 @@
 ## Steps
  1. Run the RubyInstaller to install Ruby and be sure to have "Add to path" ticked when you install.
  2. Create `C:\bin` and [add it to your PATH](#adding-a-folder-to-your-path-in-windows-10)
- 3. From the Handbrake zip file extract `HandBrakeCLI.exe` to `C:\bin`
+ 3. From the Handbrake zip file extract `HandBrakeCLI.exe` and `fonts` directory to `C:\bin`
  4. From the ffmpeg zip extract `bin/ffmpeg.exe` to `C:\bin`
  5. From the MKVToolNix 7z extract `mkvpropedit.exe` and the `data` directory to `C:\bin`
  6. From the MP4v2 7z extract `libmp4v2.dll` and `mp4track.exe` to `C:\bin`
  7. From the mpv 7z extract `mpv.exe` and `d3dcompiler_43.dll` to `C:\bin`  
     `C:\bin` should now contain:
      - data/
+     - fonts/
      - d3dcompiler_43.dll
      - ffmpeg.exe
      - HandBrakeCLI.exe
