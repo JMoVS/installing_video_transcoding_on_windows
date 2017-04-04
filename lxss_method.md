@@ -23,7 +23,6 @@ We essentially want just the dependencies to work, that are listed on the video_
 - ffmpeg
 - mkvtoolnix
 - mp4v2
-- mplayer
 
 ## What we will get
 
@@ -105,7 +104,7 @@ brew update && brew upgrade
 Some build dependencies depend on some other tools, that aren't marked as dependencies in them and you also need some things to get the ball rolling on lxss:
 
 ```
-brew install m4 xz gettext gcc ffmpeg mkvtoolnix mp4v2 mplayer
+brew install m4 xz gettext gcc ffmpeg mkvtoolnix mp4v2
 ```
 
 Now grab a cup of coffee or tee or go in the Biergarten and drink a Maß and come back ~~later~~ the next day, it'll take some LONG time. ;-)
