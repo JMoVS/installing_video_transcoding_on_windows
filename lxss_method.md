@@ -38,7 +38,7 @@ The Windows Subsystem for Linux can't launch graphical Linux applications, but a
 - Extract it to `C:\bin`
 - In Bash create an alias for mpv:
     ```
-    echo "alias mpv=mpv.exe" >> .bash_profile
+    echo "alias mpv=mpv.exe" >> .bashrc
     ```
 
 ## Install video_transcoding
