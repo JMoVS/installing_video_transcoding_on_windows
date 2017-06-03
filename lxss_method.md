@@ -10,7 +10,7 @@
 
 To begin, open Settings and go to Update & Security -> For Developers -> and change your computer to "Developer Mode".
 
-Head into your search bar in Windows and look for "windows-features" and you should find a control panel link getting you to a nice window where you can activate the "Windows-Subsystem for Linux (Beta)". When this is done, start your Ubuntu shell (if you don't immediately see a link, search for "Ubuntu" in the search bar) and follow the instructions. When you're done, you should run
+Head into your search bar in Windows and look for "windows-features" and you should find a control panel link getting you to a nice window where you can activate the "Windows-Subsystem for Linux (Beta)". When this is done, restart your computer. After the restart, open cmd.exe and run 'bash' and accept the terms. After it finishes downloading, you can start your Ubuntu shell (if you don't immediately see a link, search for "Ubuntu" in the search bar) and follow the instructions. When you're done, you should run
 
 ```
 sudo apt-get update && sudo apt-get upgrade
