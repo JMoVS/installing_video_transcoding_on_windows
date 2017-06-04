@@ -10,7 +10,7 @@
 
 To begin, open Settings and go to Update & Security -> For Developers -> and change your computer to "Developer Mode".
 
-Head into your search bar in Windows and look for "windows-features" and you should find a control panel link getting you to a nice window where you can activate the "Windows-Subsystem for Linux (Beta)". When this is done, start your Ubuntu shell (if you don't immediately see a link, search for "Ubuntu" in the search bar) and follow the instructions. When you're done, you should run
+Head into your search bar in Windows and look for "windows-features" and you should find a control panel link getting you to a nice window where you can activate the "Windows-Subsystem for Linux (Beta)". When this is done, restart your computer. After the restart, open cmd.exe and run 'bash' and accept the terms. After it finishes downloading, you can start your Ubuntu shell (if you don't immediately see a link, search for "Ubuntu" in the search bar) and follow the instructions. When you're done, you should run
 
 ```
 sudo apt-get update && sudo apt-get upgrade
@@ -38,7 +38,7 @@ The Windows Subsystem for Linux can't launch graphical Linux applications, but a
 - Extract it to `C:\bin`
 - In Bash create an alias for mpv:
     ```
-    echo "alias mpv=mpv.exe" >> .bash_profile
+    echo "alias mpv=mpv.exe" >> .bashrc
     ```
 
 ## Install video_transcoding
@@ -53,6 +53,6 @@ sudo gem install video_transcoding
 
 If you have your movie files in the windows file system (so NOT in ~userfolder/AppData/Local/lxss/home...), for example on your desktop, you have to provide the path to it via `/mnt/[drive letter]/path/to/your/file/location`. It then should work.
 
-I hope this works. If it doesn't, feel free to contact me on twitter @JMoVS or comment below.
+I hope this works. If it doesn't, feel free to contact me on twitter @JMoVS or better, open an issue [here](https://github.com/JMoVS/installing_video_transcoding_on_windows/issues/new).
 
 This readme was originally a gist: https://gist.github.com/JMoVS/75f3c6b344648deef59bc761e5e5a0e6 - there are some good comments over there.
