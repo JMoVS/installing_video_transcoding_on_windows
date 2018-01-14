@@ -30,6 +30,7 @@ The `detect-crop` command has an optional dependency on `mpv` for previewing cro
 1. Extract it to `C:\bin`
 1. Create an alias for mpv:
     `echo "alias mpv=mpv.exe" >> .bashrc`
+1. Reload `.bashrc` by running `source ~/.bashrc` 
 
 If you have your movie files in the Windows file system (so NOT in `~userfolder/AppData/Local/lxss/home`), for example on your desktop, you have to provide the path to it via `/mnt/[drive letter]/path/to/your/file/location`. You can also navigate to the folder in Explorer, then type bash in the address bar to open a bash instance to that location
 
