@@ -50,16 +50,15 @@ In old versions of Windows 10, or in Windows 8.1 and earlier, you either don't h
 - [RubyInstaller](https://rubyinstaller.org/downloads/)
 
 1. Download everything from the links above
-1. Run the Ruby installer and make sure "Add to path" is ticked during install
+1. Run the Ruby installer and make sure "Add to path" is ticked during install. Don't run the `ridk install` step at the end, you don't need this for `video_transcoding`
 1. Create `C:\bin` and [add it to your PATH](#adding-a-folder-to-your-path)
-1. From the HandBrake zip file extract `HandBrakeCLI.exe` and the `fonts\` directory to `C:\bin`
+1. From the HandBrake zip file extract `HandBrakeCLI.exe` to `C:\bin`
 1. From the ffmpeg zip file extract `bin\ffmpeg.exe` to `C:\bin`
 1. From the MKVToolNix 7z file extract `mkvpropedit` and the `data\` directory to `C:\bin`
 1. From the MP4v2 7z file extract `libmp4v2.dll` and `mp4track.exe` to `C:\bin`
 1. From the mpv 7z file extract `mpv.exe` and `d3dcompiler_43.dll` to `C:\bin`  
     `C:\bin` should now contain:
     - data\
-    - fonts\
     - d3dcompiler_43.dll
     - ffmpeg.exe
     - HandBrakeCLI.exe
