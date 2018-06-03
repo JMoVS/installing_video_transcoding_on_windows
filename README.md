@@ -11,7 +11,7 @@ If you're using an up-to-date version of Windows 10, you have access to "[Bash o
     1. Click `Start` then look for `Turn Windows features on or off`
     1. Select `Windows Subsystem for Linux`
     1. Click ok. You'll need to restart your PC
-    1. Now open up `cmd.exe` and run `bash`. Follow the instructions then bash is set up and ready to go 
+    1. Now open up `cmd.exe` and run `bash`. Follow the instructions (follow the link), choose Ubuntu as distribution in the Windows Store link and install it. It might require mutliple reboots before bash is set up and ready to go. <sup>[1](#WeirdSQLError)</sup>
     1. When you're asked to create a username and password you can choose whatever you like, it doesn't have to match your Windows username and password
 1. Next you install the dependencies for `video_transcoding`. Inside of bash:
     1. Run `sudo apt-get update && sudo apt-get upgrade` to ensure everything's up to date
@@ -113,3 +113,5 @@ In CMD you can `CD` to that directory, populate the `queue.txt` file then simply
 
 To create a `queue.txt` with every mkv file in a directory you can use the following command:  
 `for %a in (*.mkv) do echo %~fa >> queue.txt`
+
+<a name="WeirdSQLError">1</a>: If you have an error of "error-message-data-area-passed-to-a-system-call-is-too-small" when trying to start Ubuntu, check if you have SQL Server installed and if you do, update it to SP2 and then a cumulative Update (all findable via Google on Microsoft's page). This is a relevant bug because MyMovies Pro Database installs an SQL server for the app, so you might be affected by this bug if you're a Windows movie transcoder.
