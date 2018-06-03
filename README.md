@@ -9,7 +9,7 @@ If you're using an up-to-date version of Windows 10, you have access to "[Bash o
     1. Open Settings then go to `Update & Security -> For Developers`
     1. Change your computer to "Developer Mode"
     1. Click `Start` then look for `Turn Windows features on or off`
-    1. Select `Windows Subsystem for Linux (beta)`
+    1. Select `Windows Subsystem for Linux`
     1. Click ok. You'll need to restart your PC
     1. Now open up `cmd.exe` and run `bash`. Follow the instructions then bash is set up and ready to go 
     1. When you're asked to create a username and password you can choose whatever you like, it doesn't have to match your Windows username and password
