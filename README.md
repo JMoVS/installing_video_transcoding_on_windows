@@ -56,10 +56,9 @@ In old versions of Windows 10, or in Windows 8.1 and earlier, you either don't h
 1. From the ffmpeg zip file extract `bin\ffmpeg.exe` to `C:\bin`
 1. From the MKVToolNix 7z file extract `mkvpropedit` and the `data\` directory to `C:\bin`
 1. From the MP4v2 7z file extract `libmp4v2.dll` and `mp4track.exe` to `C:\bin`
-1. From the mpv 7z file extract `mpv.exe` and `d3dcompiler_43.dll` to `C:\bin`  
+1. From the mpv 7z file extract `mpv.exe` to `C:\bin`  
     `C:\bin` should now contain:
     - data\
-    - d3dcompiler_43.dll
     - ffmpeg.exe
     - HandBrakeCLI.exe
     - libmp4v2.dll
