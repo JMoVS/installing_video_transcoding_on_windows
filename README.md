@@ -6,13 +6,7 @@ Don Melton provides some [amazing scripts](https://github.com/donmelton/video_tr
 If you're using an up-to-date version of Windows 10, you have access to "[Bash on Ubuntu on Windows](https://msdn.microsoft.com/en-gb/commandline/wsl/about)". This feature allows you to run command line Linux programs on Windows without using a virtual machine, and it also gives you access to Ubuntu's extensive package archives. Everything you need to run these scripts is easily installable with apt-get.
 
 1. First up, you need to activate Bash.
-    1. Open Settings then go to `Update & Security -> For Developers`
-    1. Change your computer to "Developer Mode"
-    1. Click `Start` then look for `Turn Windows features on or off`
-    1. Select `Windows Subsystem for Linux`
-    1. Click ok. You'll need to restart your PC
-    1. Now open up `cmd.exe` and run `bash`. Follow the instructions then bash is set up and ready to go 
-    1. When you're asked to create a username and password you can choose whatever you like, it doesn't have to match your Windows username and password
+    1. Follow [Microsoft's instructions](https://docs.microsoft.com/en-us/windows/wsl/install-win10) to enable the Windows Subsystem for Linux, then install Ubuntu 18.04 from the Microsoft Store
 1. Next you install the dependencies for `video_transcoding`. Inside of bash:
     1. Run `sudo apt-get update && sudo apt-get upgrade` to ensure everything's up to date
     1. Run `sudo apt-get install ruby ffmpeg mp4v2-utils mkvtoolnix`
