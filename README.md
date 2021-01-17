@@ -33,7 +33,7 @@ In old versions of Windows 10, or in Windows 8.1 and earlier, you either don't h
 
 - [HandBrakeCLI](https://handbrake.fr/downloads2.php)  
     Get the latest stable version
-- [ffmpeg](https://ffmpeg.org/download.html), the download page for Windows is [here](http://ffmpeg.zeranoe.com/builds/)  
+- [ffmpeg](https://ffmpeg.org/download.html), the download page for Windows is [here](http://ffmpeg.org/download.html#build-windows)  
    Get the latest stable 'static' release.
 - [mkvtoolnix](https://mkvtoolnix.download/downloads.html#windows), the download page for Windows is [here](https://www.fosshub.com/MKVToolNix.html)  
     Download the latest portable version. It's packaged as a .7z file, I'd recommend using [7zip](http://www.7-zip.org/download.html) to open these files
