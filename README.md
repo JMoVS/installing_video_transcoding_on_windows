@@ -1,6 +1,6 @@
-## Transcoding video on Windows, the Don Melton way
+## Transcoding video on Windows, the Lisa Melton way
 
-Don Melton provides some [amazing scripts](https://github.com/donmelton/video_transcoding) that wrap [HandBrake](https://handbrake.fr/) to produce high quality, portable versions of Blu-ray rips. The tools Don provides are written in [Ruby](https://www.ruby-lang.org/en/), and they're packaged as a [Ruby Gem](https://rubygems.org/). All the tools are cross platform, requiring only the Ruby runtime to be installed. But they do depend on external programs to get anything useful done. These dependencies are cross platform as well, but Windows has no standard package management system (de facto or otherwise), so installing these dependencies for Windows can be a bit of a pain. But it is possible! There are several ways to go about installing these tools and their dependencies, the two discussed here are to use [Bash on Ubuntu on Windows](https://msdn.microsoft.com/en-gb/commandline/wsl/about) (which is what we recommend for users of Windows 10), but if you have an older version of Windows you can also download Windows versions of everything that's needed.
+Lisa Melton provides some [amazing scripts](https://github.com/lisamelton/video_transcoding) that wrap [HandBrake](https://handbrake.fr/) to produce high quality, portable versions of Blu-ray rips. The tools Lisa provides are written in [Ruby](https://www.ruby-lang.org/en/), and they're packaged as a [Ruby Gem](https://rubygems.org/). All the tools are cross platform, requiring only the Ruby runtime to be installed. But they do depend on external programs to get anything useful done. These dependencies are cross platform as well, but Windows has no standard package management system (de facto or otherwise), so installing these dependencies for Windows can be a bit of a pain. But it is possible! There are several ways to go about installing these tools and their dependencies, the two discussed here are to use [Bash on Ubuntu on Windows](https://msdn.microsoft.com/en-gb/commandline/wsl/about) (which is what we recommend for users of Windows 10), but if you have an older version of Windows you can also download Windows versions of everything that's needed.
 
 ### Windows 10
 If you're using an up-to-date version of Windows 10, you have access to "[Bash on Ubuntu on Windows](https://msdn.microsoft.com/en-gb/commandline/wsl/about)". This feature allows you to run command line Linux programs on Windows without using a virtual machine, and it also gives you access to Ubuntu's extensive package archives. Everything you need to run these scripts is easily installable with apt-get.
@@ -96,7 +96,7 @@ for /F "tokens=*" %%I in (queue.txt) do (
 )
 ```
 
-It works in much the same way that Don's [bash script](https://github.com/donmelton/video_transcoding#batch-control-for-transcode-video) works, although it does have the limitation of not being able to "resume" the queue in the way that Don's does. I would recommend creating a `batch-transcode.bat` file in your `C:\bin` folder, then you can create the necesarry file structure anywhere:
+It works in much the same way that Lisa's [bash script](https://github.com/lisamelton/video_transcoding#batch-control-for-transcode-video) works, although it does have the limitation of not being able to "resume" the queue in the way that Lisa's does. I would recommend creating a `batch-transcode.bat` file in your `C:\bin` folder, then you can create the necesarry file structure anywhere:
 ```
 Crops\
 queue.txt
